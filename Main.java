@@ -19,7 +19,7 @@ public class Main {
     }
 
     public static int getBreadChoice(Scanner scnr) {
-        System.out.println("Select a bread [1,4]");
+        System.out.println("Please select a bread [1,4].");
         int choice = scnr.nextInt();
         if (choice >= 1 && choice <= 4) {
             return choice;
