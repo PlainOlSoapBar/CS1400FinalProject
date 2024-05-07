@@ -59,4 +59,10 @@ public class Bread {
                 return 2.00;
         }
     }
+
+    // Checks if bread has proper name and price
+    public void debugBread() {
+        System.out.printf(
+                "%s bread - $%.2f.\n", getName(), getPrice());
+    }
 }

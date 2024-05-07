@@ -1,11 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        double totalPrice = 0.00;
         showMenu();
-        Bread bread = new Bread();
-        totalPrice += bread.getPrice();
-        System.out.printf(
-                "You selected %s bread which costs $%.2f.\n", bread.getName(), bread.getPrice());
+        Sandwich sandwich = new Sandwich();
+        sandwich.debugBread();
     }
 
     // Prints menu of bread options
