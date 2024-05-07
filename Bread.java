@@ -31,13 +31,13 @@ public class Bread {
         if (choice >= 1 && choice <= 4) {
             switch (choice) {
                 case 1:
-                    return "white";
+                    return "White";
                 case 2:
-                    return "wheat";
+                    return "Wheat";
                 case 3:
-                    return "french";
+                    return "French";
                 case 4:
-                    return "organic";
+                    return "Organic";
             }
         }
         // else
@@ -48,11 +48,11 @@ public class Bread {
     // Calculates and returns the price of the bread
     public double getBreadPrice(String choice) {
         switch (choice) {
-            case "white":
+            case "White":
                 return 1.50;
-            case "wheat":
+            case "Wheat":
                 return 1.60;
-            case "french":
+            case "French":
                 return 1.80;
             // case "organic":
             default:
