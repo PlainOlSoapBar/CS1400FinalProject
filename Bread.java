@@ -60,7 +60,7 @@ public class Bread {
         }
     }
 
-    // Checks if bread has proper name and price
+    // Allows me to check if bread name and price matches input
     public void debugBread() {
         System.out.printf(
                 "%s bread - $%.2f.\n", getName(), getPrice());
