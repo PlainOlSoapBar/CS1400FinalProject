@@ -77,8 +77,7 @@ public class Vegetables {
                 return 0.30;
             case "Cheese":
                 return 0.49;
-            // case """":
-            default:
+            default: // Quit
                 return 0.00;
         }
     }
