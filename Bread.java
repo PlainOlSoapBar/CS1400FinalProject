@@ -2,8 +2,8 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class Bread {
-    private static String name;
-    private static double price;
+    private String name;
+    private double price;
 
     // Constructor
     public Bread(Scanner scnr) {
@@ -61,7 +61,7 @@ public class Bread {
                 return 1.60;
             case "French":
                 return 1.80;
-            // case "organic":
+            // case "Organic":
             default:
                 return 2.00;
         }
