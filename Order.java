@@ -20,7 +20,7 @@ public class Order {
 
     // Gets customer's name
     public String enterCustomerName(Scanner scnr) {
-        System.out.print("Enter your name: ");
+        System.out.print("\nEnter your name: ");
         return scnr.nextLine();
     }
 
@@ -43,5 +43,11 @@ public class Order {
         // If input is invalid
         System.out.print("Invalid selection. ");
         return orderAgain(scnr);
+    }
+
+    // Returns the order content
+    public String getContent() {
+        return timeStamp + ", " + customerName + ", " + sandwich.getContent() + ", "
+                + String.format("$%.2f", sandwichCost);
     }
 }

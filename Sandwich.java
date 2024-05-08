@@ -60,6 +60,40 @@ public class Sandwich {
         // Debug.sandwichCost(sandwichCost);
     }
 
+    // Get bread name
+    public String getBreadName() {
+        return bread.getName();
+    }
+
+    // Get vegetables names
+    public String getVegetablesNames() {
+        String str = " ";
+        for (int i = 0; i < vegetables.size(); i++) {
+            str += vegetables.get(i).getName();
+            if (i < vegetables.size() - 1) {
+                str += ", ";
+            }
+        }
+        return str;
+    }
+
+    // Get meats names
+    public String getMeatsNames() {
+        String str = " ";
+        for (int i = 0; i < meats.size(); i++) {
+            str += meats.get(i).getName();
+            if (i < meats.size() - 1) {
+                str += ", ";
+            }
+        }
+        return str;
+    }
+
+    // Returns a string with the sandwich contents
+    public String getContent() {
+        return (getBreadName() + " Bread" + getVegetablesNames() + getMeatsNames()).trim().replaceAll(" +", " ");
+    }
+
     public double getSandwichCost() {
         return sandwichCost;
     }
