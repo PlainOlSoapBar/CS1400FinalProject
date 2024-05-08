@@ -23,7 +23,7 @@ public class Sandwich {
 
         // Order vegetables
         Menu.showVegetablesMenu();
-        System.out.println("\nPlease select a vegetable [1,8] (Enter 8 to quit vegetable selection):");
+        System.out.println("Please select a vegetable [1,8] (Enter 8 to quit vegetable selection):");
         vegetables = new ArrayList<Vegetables>();
         continueOrder = true;
         index = 0;
@@ -39,7 +39,7 @@ public class Sandwich {
 
         // Order meats
         Menu.showMeatsMenu();
-        System.out.println("\nPlease select a meat [1,5] (Enter 5 to quit meat selection):");
+        System.out.println("Please select a meat [1,5] (Enter 5 to quit meat selection):");
         meats = new ArrayList<Meats>();
         continueOrder = true;
         index = 0;
