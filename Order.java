@@ -1,11 +1,12 @@
 public class Order {
-    private String customerName;
     private Sandwich sandwich;
+    private double sandwichCost;
+    private String customerName;
     private String timeStamp;
-    private double totalCost;
 
     // Constructor
     public Order(Sandwich sandwich) {
         this.sandwich = sandwich;
+        this.sandwichCost = sandwich.getSandwichCost();
     }
 }

@@ -23,13 +23,8 @@ public class Meats {
 
     // Validates the user's input and returns the name of the bread
     public static String select(Scanner scnr) {
-        System.out.println("Please select a meat [1,5].");
         try {
             int choice = scnr.nextInt();
-
-            // Escape code to remove the user's input from terminal (if supported)
-            System.out.print("\033[1A\033[2K");
-
             if (choice >= 1 && choice <= 5) {
                 switch (choice) {
                     case 1:
