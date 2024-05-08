@@ -47,7 +47,7 @@ public class Order {
 
     // Returns the order content
     public String getContent() {
-        return timeStamp + ", " + customerName + ", " + sandwich.getContent() + ", "
+        return timeStamp + ", " + customerName + ", " + sandwich.getContent() + " "
                 + String.format("$%.2f", sandwichCost);
     }
 }
