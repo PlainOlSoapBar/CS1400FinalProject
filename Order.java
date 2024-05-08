@@ -6,7 +6,6 @@ public class Order {
 
     // Constructor
     public Order(Sandwich sandwich) {
-
         this.sandwich = sandwich;
     }
 }

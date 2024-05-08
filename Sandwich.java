@@ -11,6 +11,6 @@ public class Sandwich {
     // Constructor
     public Sandwich() {
         sandwichCost = bread.getPrice();
-        System.out.printf("%s bread - $%.2f.\n", bread.getName(), bread.getPrice());
+        Debug.bread(bread);
     }
 }
