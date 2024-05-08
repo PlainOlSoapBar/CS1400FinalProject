@@ -40,10 +40,10 @@ public class Meats {
                 }
             }
             // else
-            System.out.print("Invalid selection. ");
+            System.out.println("Invalid selection. Please select a meat [1,5] (Enter 5 to quit meat selection):");
             return select(scnr);
         } catch (InputMismatchException e) {
-            System.out.print("Invalid selection. ");
+            System.out.println("Invalid selection. Please select a meat [1,5] (Enter 5 to quit meat selection):");
             scnr.next();
             return select(scnr);
         }

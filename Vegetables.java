@@ -46,10 +46,12 @@ public class Vegetables {
                 }
             }
             // else
-            System.out.print("Invalid selection. ");
+            System.out.println(
+                    "Invalid selection. Please select a vegetable [1,8] (Enter 8 to quit vegetable selection):");
             return select(scnr);
         } catch (InputMismatchException e) {
-            System.out.print("Invalid selection. ");
+            System.out.println(
+                    "Invalid selection. Please select a vegetable [1,8] (Enter 8 to quit vegetable selection):");
             scnr.next();
             return select(scnr);
         }

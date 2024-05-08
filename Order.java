@@ -41,7 +41,7 @@ public class Order {
             return false;
         }
         // If input is invalid
-        System.out.print("Invalid selection. ");
+        System.out.println("Invalid selection. Continue to order more sandwiches? (y/n):");
         return orderAgain(scnr);
     }
 

@@ -38,10 +38,10 @@ public class Bread {
                 }
             }
             // else
-            System.out.print("Invalid selection. ");
+            System.out.println("Invalid selection. Please select a bread [1,4]:");
             return select(scnr);
         } catch (InputMismatchException e) {
-            System.out.print("Invalid selection. ");
+            System.out.println("Invalid selection. Please select a bread [1,4]:");
             scnr.next();
             return select(scnr);
         }
