@@ -15,7 +15,7 @@ public class Menu {
                 "4. Lettuce $0.20\n" +
                 "5. Green Peppers $0.25\n" +
                 "6. Tomatoes $0.30\n" +
-                "7. Cheese $0.49\n" +
+                "7. Cheese $0.50\n" +
                 "8. Quit vegetable selection\n");
     }
 
