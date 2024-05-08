@@ -19,7 +19,7 @@ public class Menu {
                 "8. Quit vegetable selection\n");
     }
 
-    public static void showMeatMenu() {
+    public static void showMeatsMenu() {
         System.out.println("=== Select Sandwich Meats: ===\n" +
                 "1. Ham $1.00\n" +
                 "2. Roasted Chicken Breast $1.10\n" +
