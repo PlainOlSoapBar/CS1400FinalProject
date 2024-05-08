@@ -53,10 +53,11 @@ public class Sandwich {
             }
         }
 
-        Debug.bread(bread);
-        Debug.vegetables(vegetables);
-        Debug.meats(meats);
-        Debug.sandwichCost(sandwichCost);
+        // Comment out if not in use
+        // Debug.bread(bread);
+        // Debug.vegetables(vegetables);
+        // Debug.meats(meats);
+        // Debug.sandwichCost(sandwichCost);
     }
 
     public double getSandwichCost() {
