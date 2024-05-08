@@ -2,8 +2,14 @@ import java.util.Scanner;
 import java.util.InputMismatchException;
 
 public class Bread {
-    private String name;
-    private double price;
+    private static String name;
+    private static double price;
+
+    // Constructor
+    public Bread(Scanner scnr) {
+        name = select(scnr);
+        price = price(name);
+    }
 
     // Returns the name of the bread
     public String getName() {
@@ -20,8 +26,10 @@ public class Bread {
         System.out.println("Please select a bread [1,4].");
         try {
             int choice = scnr.nextInt();
+
             // Escape code to remove the user's input from terminal (if supported)
             System.out.print("\033[1A\033[2K");
+
             if (choice >= 1 && choice <= 4) {
                 switch (choice) {
                     case 1:
@@ -45,7 +53,7 @@ public class Bread {
     }
 
     // Calculates and returns the price of the bread
-    public double getBreadPrice(String choice) {
+    public static double price(String choice) {
         switch (choice) {
             case "White":
                 return 1.50;
@@ -57,11 +65,5 @@ public class Bread {
             default:
                 return 2.00;
         }
-    }
-
-    // Allows me to check if bread name and price matches input
-    public void debugBread() {
-        System.out.printf(
-                "%s bread - $%.2f.\n", getName(), getPrice());
     }
 }
