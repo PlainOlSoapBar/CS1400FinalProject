@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class SandwichApp {
     public static void main(String[] args) {
+        // test comment
         Scanner scnr = new Scanner(System.in);
 
         boolean continueOrder = true;
